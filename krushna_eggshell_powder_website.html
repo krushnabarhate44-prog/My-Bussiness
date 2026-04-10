@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krushna Eggshell Powder Business</title>
+  <meta name="description" content="Natural eggshell powder business website for calcium-rich powder for feed, agriculture, and industrial use." />
+  <style>
+    :root{
+      --bg:#f7f5ef;
+      --green:#2f6b3b;
+      --green-dark:#1f4c29;
+      --gold:#d7b56d;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    .container{
+      width:min(1120px, 92%);
+      margin:auto;
+    }
+    header{
+      background:linear-gradient(135deg, #f4efe4, #ffffff);
+      padding:18px 0;
+      position:sticky;
+      top:0;
+      z-index:20;
+      border-bottom:1px solid #e8e2d6;
+    }
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+    }
+    .logo{
+      font-size:28px;
+      font-weight:700;
+      color:var(--green-dark);
+    }
+    .logo span{color:var(--gold)}
+    .nav-links{
+      display:flex;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+    .nav-links a{
+      text-decoration:none;
+      color:var(--text);
+      font-weight:600;
+    }
+    .hero{
+      padding:72px 0 56px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:32px;
+      align-items:center;
+    }
+    .badge{
+      display:inline-block;
+      padding:8px 14px;
+      background:#e8f2ea;
+      color:var(--green-dark);
+      border-radius:999px;
+      font-size:14px;
+      font-weight:700;
+      margin-bottom:16px;
+    }
+    h1{
+      font-size:52px;
+      line-height:1.1;
+      margin:0 0 18px;
+      color:var(--green-dark);
+    }
+    .hero p{
+      font-size:18px;
+      color:var(--muted);
+      margin-bottom:24px;
+    }
+    .btns{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .btn-primary{
+      background:var(--green);
+      color:var(--white);
+    }
+    .btn-primary:hover{background:var(--green-dark)}
+    .btn-secondary{
+      background:var(--white);
+      color:var(--green-dark);
+      border:1px solid #d8d8d8;
+    }
+    .hero-card{
+      background:var(--white);
+      border-radius:24px;
+      padding:28px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+    }
+    .hero-card h3{
+      margin-top:0;
+      color:var(--green-dark);
+    }
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin-top:18px;
+    }
+    .stat{
+      background:#f9fafb;
+      border-radius:16px;
+      padding:18px;
+      text-align:center;
+    }
+    .stat strong{
+      display:block;
+      font-size:24px;
+      color:var(--green-dark);
+    }
+    section{
+      padding:56px 0;
+    }
+    .section-title{
+      text-align:center;
+      margin-bottom:34px;
+    }
+    .section-title h2{
+      font-size:36px;
+      margin:0 0 10px;
+      color:var(--green-dark);
+    }
+    .section-title p{
+      color:var(--muted);
+      max-width:760px;
+      margin:0 auto;
+    }
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+    }
+    .card{
+      background:var(--white);
+      padding:24px;
+      border-radius:20px;
+      box-shadow:0 10px 24px rgba(0,0,0,.06);
+    }
+    .card h3{
+      margin-top:0;
+      color:var(--green-dark);
+    }
+    .card ul{
+      padding-left:18px;
+      color:var(--muted);
+    }
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+      align-items:center;
+    }
+    .about-box{
+      background:var(--white);
+      border-radius:22px;
+      padding:28px;
+      box-shadow:0 10px 24px rgba(0,0,0,.06);
+    }
+    .list-check{
+      padding-left:18px;
+    }
+    .list-check li{
+      margin-bottom:10px;
+    }
+    .contact-box{
+      background:linear-gradient(135deg, #2f6b3b, #1f4c29);
+      color:white;
+      border-radius:24px;
+      padding:34px;
+      text-align:center;
+    }
+    .contact-box a{
+      color:#fff;
+      font-weight:700;
+    }
+    footer{
+      background:#17331d;
+      color:#d7e1d8;
+      padding:26px 0;
+      text-align:center;
+      margin-top:20px;
+    }
+    @media (max-width: 900px){
+      .hero-grid,.about,.cards{
+        grid-template-columns:1fr;
+      }
+      h1{font-size:40px}
+      .stats{
+        grid-template-columns:1fr;
+      }
+      nav{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Krushna <span>Eggshell</span> Powder</div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">Natural • Calcium Rich • Eco-Friendly</div>
+          <h1>Premium Egg Shell Powder for Multiple Industries</h1>
+          <p>
+            We provide high-quality eggshell powder made from carefully processed shells.
+            Our product is useful for feed, agriculture, calcium-based applications, and industrial buyers looking for a natural raw material.
+          </p>
+          <div class="btns">
+            <a class="btn btn-primary" href="#contact">Get Quote</a>
+            <a class="btn btn-secondary" href="#products">View Products</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Why choose our eggshell powder?</h3>
+          <p>Clean processing, reliable quality, bulk supply options, and strong calcium value for commercial buyers.</p>
+          <div class="stats">
+            <div class="stat">
+              <strong>High</strong>
+              Calcium Content
+            </div>
+            <div class="stat">
+              <strong>Bulk</strong>
+              Supply Available
+            </div>
+            <div class="stat">
+              <strong>Eco</strong>
+              Friendly Product
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Products</h2>
+          <p>We supply eggshell powder for different business needs with a focus on quality, consistency, and natural calcium value.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Feed Grade Eggshell Powder</h3>
+            <p>Suitable for animal feed and poultry-related applications where calcium supplementation is important.</p>
+            <ul>
+              <li>Fine powder texture</li>
+              <li>Bulk quantity available</li>
+              <li>Strong calcium source</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Agriculture Use</h3>
+            <p>Can be positioned for soil and plant-related calcium support where natural mineral sources are preferred.</p>
+            <ul>
+              <li>Natural mineral source</li>
+              <li>Eco-friendly material</li>
+              <li>Easy bulk handling</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Industrial Supply</h3>
+            <p>For buyers seeking eggshell-based calcium raw material for further processing or manufacturing purposes.</p>
+            <ul>
+              <li>Custom inquiry support</li>
+              <li>Business supply focus</li>
+              <li>Regular orders possible</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about">
+        <div class="about-box">
+          <h2>About Our Business</h2>
+          <p>
+            We are building a sustainable eggshell powder business by converting a natural waste material into a useful product.
+            Our aim is to supply dependable eggshell powder to local and bulk buyers who need a calcium-rich raw material.
+          </p>
+          <p>
+            We focus on quality processing, honest business, and practical supply for customers in feed, farming, and related industries.
+          </p>
+        </div>
+        <div class="about-box">
+          <h2>What makes us different</h2>
+          <ul class="list-check">
+            <li>Natural calcium-rich powder</li>
+            <li>Eco-friendly and value-added product</li>
+            <li>Bulk business supply support</li>
+            <li>Simple and transparent customer dealing</li>
+            <li>Suitable for multiple market segments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <div class="container">
+        <div class="section-title">
+          <h2>Business Benefits</h2>
+          <p>Our eggshell powder can be promoted as a practical material for buyers who want a natural calcium-based input.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <h3>Natural Source</h3>
+            <p>Made from eggshells and positioned as a naturally derived calcium material.</p>
+          </div>
+          <div class="card">
+            <h3>Cost-Effective</h3>
+            <p>Suitable for businesses looking for affordable raw material options in bulk.</p>
+          </div>
+          <div class="card">
+            <h3>Sustainable</h3>
+            <p>Supports waste-to-value business ideas and eco-friendly product positioning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Contact Us for Bulk Orders</h2>
+          <p>Ready to work with feed buyers, industrial users, distributors, and local business customers.</p>
+          <p>
+            Email: <a href="mailto:krushnabarhate44@gmail.com">krushnabarhate44@gmail.com</a><br/>
+            Phone: <a href="tel:+919503894270">+91 95038 94270</a><br/>
+            WhatsApp: <a href="https://wa.me/919503894270" target="_blank">Chat on WhatsApp</a>
+          </p>
+          <p>Chh. Sambhajinagar, Maharashtra, India</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Krushna Eggshell Powder Business. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
